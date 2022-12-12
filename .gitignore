@@ -160,6 +160,7 @@ cython_debug/
 #.idea/
 
 # ASW
+.DS_Store
 site/
 .venv/
 .venv-mac/
