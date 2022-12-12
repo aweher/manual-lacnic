@@ -1,0 +1,97 @@
+site_name: LACNIC
+site_description: Manual de Políticas de LACNIC
+site_author: Ariel Weher
+copyright: Copyright LACNIC
+repo_name: 'GitHub'
+site_url: https://manual.lacnic.net/
+repo_url: http://github.com/aweher/manual-lacnic
+edit_uri: edit/main/docs/
+#dev_addr: '0.0.0.0:8000'
+
+theme:
+  icon:
+    repo: fontawesome/brands/github
+  locale: es
+  language: es
+  prev_next_buttons_location: none
+  analytics:
+  gtag: 
+  name: material
+  features:
+    - content.code.annotate
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - search.share
+#    - header.autohide
+  font:
+    text: Ubuntu
+  palette:
+  - primary: deep purple
+  - accent: deep purple
+  - scheme: default
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Cambiar al modo oscuro
+  - scheme: slate
+    toggle:
+      icon: material/toggle-switch
+      name: Cambiar al modo claro
+
+nav:
+    - Manual: 'index.md'
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
+    - pymdownx.highlight:
+        linenums: true
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.superfences
+    - pymdownx.snippets
+    - pymdownx.details
+    - pymdownx.tabbed
+    - abbr
+    - admonition
+    - attr_list
+    - def_list
+    - footnotes
+    - meta
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
+
+plugins:
+  - search
+  - git-revision-date
+  - git-revision-date-localized
+  - macros
+
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: XYZ
+  consent:
+    title: Cookies
+    description: > 
+      Usamos cookies para reconocer sus visitas y preferencias repetidas, así como para medir la efectividad de nuestra documentación y si los usuarios encuentran lo que están buscando. Con su consentimiento, nos está ayudando a mejorar nuestra documentación.
+#  social:
+#    - icon: fontawesome/solid/ambulance
+#      link: https://lacnic.net
+#      name: LACNIC
