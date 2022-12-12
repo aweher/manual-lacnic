@@ -1,0 +1,1354 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Manual de Políticas de LACNIC">
+      
+      
+        <meta name="author" content="Ariel Weher">
+      
+      
+        <link rel="canonical" href="https://manual.lacnic.net/manual/seccion2/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>2. DIRECCIONES IPv4 - Manual de Políticas LACNIC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Barlow";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2-direcciones-ipv4" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Manual de Políticas LACNIC" class="md-header__button md-logo" aria-label="Manual de Políticas LACNIC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Manual de Políticas LACNIC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2. DIRECCIONES IPv4
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_2">
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Cambiar al modo oscuro"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Cambiar al modo oscuro" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Cambiar al modo claro"  type="radio" name="__palette" id="__palette_4">
+          
+            <label class="md-header__button md-icon" title="Cambiar al modo claro" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="http://github.com/aweher/manual-lacnic" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Manual de Políticas LACNIC" class="md-nav__button md-logo" aria-label="Manual de Políticas LACNIC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Manual de Políticas LACNIC
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="http://github.com/aweher/manual-lacnic" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resumen/" class="md-nav__link">
+        Resumen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion1/" class="md-nav__link">
+        1 Definiciones
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./" class="md-nav__link">
+        2 Direcciones IPv4
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion3/" class="md-nav__link">
+        3 Distribución de ASN
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion4/" class="md-nav__link">
+        4 Distribución y Asignación IPv6
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion5/" class="md-nav__link">
+        5 Delegación de Resolución Inversa
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion6/" class="md-nav__link">
+        6 Política de LAME Delegation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion7/" class="md-nav__link">
+        7 Revocación y Devolución de Recursos
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion8/" class="md-nav__link">
+        8 Solicitud de Bulk WHOIS
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion9/" class="md-nav__link">
+        9 Políticas Globales
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion10/" class="md-nav__link">
+        10 Distribución de Recursos para Investigación y Experimentación
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion11/" class="md-nav__link">
+        11 Políticas sobre el agotamiento IPv4
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion12/" class="md-nav__link">
+        12 Validación del abuse-c y abuse-mailbox
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apendices" class="md-nav__link">
+        A Apendices
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referencias" class="md-nav__link">
+        B Referencias
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21-alcance" class="md-nav__link">
+    2.1. ALCANCE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-espacio-de-direcciones-ipv4-y-el-sistema-de-registro-de-internet" class="md-nav__link">
+    2.2. ESPACIO DE DIRECCIONES IPv4 Y EL SISTEMA DE REGISTRO DE INTERNET
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2. ESPACIO DE DIRECCIONES IPv4 Y EL SISTEMA DE REGISTRO DE INTERNET">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221-tipo-de-direcciones-ipv4" class="md-nav__link">
+    2.2.1. Tipo de direcciones IPv4
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2.1. Tipo de direcciones IPv4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2211-direcciones-ipv4-publicas" class="md-nav__link">
+    2.2.1.1. Direcciones IPv4 públicas
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2.1.1. Direcciones IPv4 públicas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2212-direcciones-ipv4-privadas" class="md-nav__link">
+    2.2.1.2. Direcciones IPv4 privadas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2213-direcciones-ipv4-especiales-y-reservadas" class="md-nav__link">
+    2.2.1.3. Direcciones IPv4 especiales y reservadas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-politicas-para-la-distribucion-y-asignacion-de-direcciones-ipv4" class="md-nav__link">
+    2.3. POLÍTICAS PARA LA DISTRIBUCIÓN Y ASIGNACIÓN DE DIRECCIONES IPv4
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3. POLÍTICAS PARA LA DISTRIBUCIÓN Y ASIGNACIÓN DE DIRECCIONES IPv4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-introduccion" class="md-nav__link">
+    2.3.1. Introducción
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-aspectos-a-considerar-en-la-administracion-de-direcciones-ipv4" class="md-nav__link">
+    2.3.2. Aspectos a considerar en la administración de direcciones IPv4
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.2. Aspectos a considerar en la administración de direcciones IPv4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2321-las-direcciones-ipv4-son-delegadas" class="md-nav__link">
+    2.3.2.1. Las direcciones IPv4 son delegadas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2322-politica-de-lento-inicio" class="md-nav__link">
+    2.3.2.2. Política de lento inicio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2323-bloques-distribuidos" class="md-nav__link">
+    2.3.2.3. Bloques distribuidos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2324-evitar-la-fragmentacion-de-bloques" class="md-nav__link">
+    2.3.2.4. Evitar la fragmentación de bloques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2325-documentacion" class="md-nav__link">
+    2.3.2.5. Documentación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2326-uso-del-esquema-sin-clases-cidr" class="md-nav__link">
+    2.3.2.6. Uso del esquema sin clases (CIDR)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2327-direccionamiento-estatico" class="md-nav__link">
+    2.3.2.7. Direccionamiento estático
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2328-webhosting" class="md-nav__link">
+    2.3.2.8. Webhosting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2329" class="md-nav__link">
+    2.3.2.9.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23210" class="md-nav__link">
+    2.3.2.10.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23211" class="md-nav__link">
+    2.3.2.11.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23212-supervision-de-asignaciones" class="md-nav__link">
+    2.3.2.12. Supervisión de asignaciones
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.2.12. Supervisión de asignaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#232121-ventana-de-asignacion" class="md-nav__link">
+    2.3.2.12.1. Ventana de asignación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232122-distribuciones-a-los-nirs" class="md-nav__link">
+    2.3.2.12.2. Distribuciones a los NIRs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23213-registro-de-asignaciones" class="md-nav__link">
+    2.3.2.13. Registro de asignaciones
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.2.13. Registro de asignaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#232131-informacion-necesaria" class="md-nav__link">
+    2.3.2.13.1. Información necesaria
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.2.13.1. Información necesaria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2321311-clientes-residenciales" class="md-nav__link">
+    2.3.2.13.1.1 Clientes residenciales
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2321312-privacidad-de-clientes-residenciales" class="md-nav__link">
+    2.3.2.13.1.2 Privacidad de Clientes residenciales
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232132-geolocalizacion" class="md-nav__link">
+    2.3.2.13.2 Geolocalización
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23214-seguridad-y-confidencialidad" class="md-nav__link">
+    2.3.2.14. Seguridad y Confidencialidad
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23215-igualdad-en-el-procesamiento-de-solicitudes" class="md-nav__link">
+    2.3.2.15. Igualdad en el procesamiento de solicitudes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23216-microasignaciones" class="md-nav__link">
+    2.3.2.16. Microasignaciones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23217-fusiones-adquisiciones-reorganizaciones-o-reubicaciones" class="md-nav__link">
+    2.3.2.17. Fusiones, adquisiciones, reorganizaciones o reubicaciones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23218-transferencias-de-direcciones-ipv4" class="md-nav__link">
+    2.3.2.18. Transferencias de direcciones IPv4
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233-distribucion-y-asignacion-inicial-de-direcciones-ipv4" class="md-nav__link">
+    2.3.3. Distribución y asignación inicial de direcciones IPv4
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.3. Distribución y asignación inicial de direcciones IPv4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2331-distribucion-inicial-a-isps" class="md-nav__link">
+    2.3.3.1. Distribución inicial a ISPs
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.3.1. Distribución inicial a ISPs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#23312-requisitos-para-un-prefijo-21-o-menor-bloque-de-8-24-o-mas" class="md-nav__link">
+    2.3.3.1.2. Requisitos para un prefijo /21 o menor (bloque de 8 /24 o más)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2332-microasignaciones-a-infraestructura-critica" class="md-nav__link">
+    2.3.3.2. Microasignaciones a infraestructura crítica
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2333-distribuciones-directas-a-proveedores-de-servicio-de-internet" class="md-nav__link">
+    2.3.3.3. Distribuciones directas a proveedores de servicio de internet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2334-asignaciones-a-usuarios-finales" class="md-nav__link">
+    2.3.3.4. Asignaciones a Usuarios Finales
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3.3.4. Asignaciones a Usuarios Finales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#23341-informacion-requerida" class="md-nav__link">
+    2.3.3.4.1. Información requerida
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23342-tasa-de-utilizacion" class="md-nav__link">
+    2.3.3.4.2. Tasa de utilización
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23343tamano-de-la-asignacion-y-procedimiento" class="md-nav__link">
+    2.3.3.4.3.Tamaño de la asignación y procedimiento
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#234-politicas-para-la-distribucion-de-espacio-adicional-de-direcciones-ipv4" class="md-nav__link">
+    2.3.4. Políticas para la distribución de espacio adicional de direcciones IPv4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#235-reserva-especial-de-direcciones-ipv4-para-infraestructura-critica-para-la-operacion-de-internet-en-la-region" class="md-nav__link">
+    2.3.5. Reserva especial de direcciones IPv4 para infraestructura crítica para la operación de Internet en la región.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#236-permiso-de-transferencia-y-no-devolucion-de-recursos" class="md-nav__link">
+    2.3.6. Permiso de transferencia y no-devolución de recursos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="http://github.com/aweher/manual-lacnic/edit/main/docs/manual/seccion2/index.md" title="Editar esta página" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="2-direcciones-ipv4">2. DIRECCIONES IPv4<a class="headerlink" href="#2-direcciones-ipv4" title="Permanent link">#</a></h1>
+<h2 id="21-alcance">2.1. ALCANCE<a class="headerlink" href="#21-alcance" title="Permanent link">#</a></h2>
+<p>Este capítulo describe el sistema de administración de recursos de Internet en el área de Latinoamérica y el Caribe. Particularmente describe las reglas y guías que gobiernan la distribución de los bloques de direcciones IPv4 asignados a Latinoamérica y el Caribe. En el caso de direcciones IP las reglas establecidas en este capítulo están relacionadas para todos los bloques de direcciones IPv4 distribuidas o asignadas vía LACNIC y las anteriores distribuidas y asignadas por ARIN. 
+Este capítulo no describe espacio de direcciones de Internet privadas y espacios de direcciones multicast. </p>
+<p>Este capítulo tampoco describe la administración del espacio del direccionamiento IPv6 el cual es tratado en el capítulo de "Políticas para la distribución y asignación de direcciones IPv6". Se hace aquí una distinción entre distribución y asignación de direcciones IP. Las direcciones son distribuidas a los NIRs e ISPs para que a su vez sean asignadas a sus usuarios finales. </p>
+<h2 id="22-espacio-de-direcciones-ipv4-y-el-sistema-de-registro-de-internet">2.2. ESPACIO DE DIRECCIONES IPv4 Y EL SISTEMA DE REGISTRO DE INTERNET<a class="headerlink" href="#22-espacio-de-direcciones-ipv4-y-el-sistema-de-registro-de-internet" title="Permanent link">#</a></h2>
+<h3 id="221-tipo-de-direcciones-ipv4">2.2.1. Tipo de direcciones IPv4<a class="headerlink" href="#221-tipo-de-direcciones-ipv4" title="Permanent link">#</a></h3>
+<p>Para propósitos de este capítulo las direcciones IPv4 son números binarios de 32 bits que son usados como direcciones en los protocolos IPv4, el cual es utilizado en Internet. Existen tres tipos de direcciones IPv4. </p>
+<h4 id="2211-direcciones-ipv4-publicas">2.2.1.1. Direcciones IPv4 públicas<a class="headerlink" href="#2211-direcciones-ipv4-publicas" title="Permanent link">#</a></h4>
+<p>Las direcciones IPv4 públicas constituyen el espacio de direcciones de Internet. Estas son distribuidas para ser globalmente únicas de acuerdo a los objetivos que se describirán más adelante en este documento. El principal propósito de este espacio de direcciones es permitir la comunicación usando IPv4 sobre Internet. Un propósito secundario es permitir la comunicación entre redes privadas interconectadas. </p>
+<h5 id="2212-direcciones-ipv4-privadas">2.2.1.2. Direcciones IPv4 privadas<a class="headerlink" href="#2212-direcciones-ipv4-privadas" title="Permanent link">#</a></h5>
+<p>Algunos rangos de direcciones IPv4 han sido reservados para la operación de redes privadas. Cualquier organización puede usar estas direcciones IPv4 en sus redes privadas sin la necesidad de solicitarlo a algún Registro de Internet. La principal condición establecida para el uso de direcciones IPv4 privadas es que los dispositivos que usen estas direcciones IPv4 no necesiten ser alcanzados desde Internet. Para una descripción más detallada acerca del espacio de direcciones IPv4 privadas, por favor consulte el RFC 1918. </p>
+<h5 id="2213-direcciones-ipv4-especiales-y-reservadas">2.2.1.3. Direcciones IPv4 especiales y reservadas<a class="headerlink" href="#2213-direcciones-ipv4-especiales-y-reservadas" title="Permanent link">#</a></h5>
+<p>Estas son rangos de direcciones IPv4 reservadas para aplicaciones como el multicasting, estas direcciones IPv4 están descritas en el RFC 1112 y para propósitos de este capítulo están más allá del contexto del mismo. </p>
+<h2 id="23-politicas-para-la-distribucion-y-asignacion-de-direcciones-ipv4">2.3. POLÍTICAS PARA LA DISTRIBUCIÓN Y ASIGNACIÓN DE DIRECCIONES IPv4<a class="headerlink" href="#23-politicas-para-la-distribucion-y-asignacion-de-direcciones-ipv4" title="Permanent link">#</a></h2>
+<h3 id="231-introduccion">2.3.1. Introducción<a class="headerlink" href="#231-introduccion" title="Permanent link">#</a></h3>
+<p>En este capítulo se describirá cómo un Registro de Internet (Para futuras referencias este concepto comprende a Proveedores de Servicios de Internet y Registros Nacionales de Internet) puede obtener una distribución de direcciones IPv4 y cómo ese espacio distribuido deberá ser administrado. </p>
+<p>Los espacios de direcciones IPv4 son distribuidos a los Registros de Internet (IRs) usando un modelo de lento inicio. Las distribuciones están basadas en una necesidad justificada, no solamente sobre las bases de predicción de clientes. Debido a que el número de direcciones IPv4 es limitado, muchos factores deben considerarse en la delegación de espacios de direcciones IPv4. La idea es distribuir el espacio de direcciones IPv4 a los Registros de Internet en la misma relación en que estos asignarán las direcciones IPv4 a sus usuarios. </p>
+<p>El tamaño de una distribución a un IR en particular está basado en la tasa en la cual ha asignado anteriormente espacios de direcciones IPv4 a sus clientes. El objetivo es evitar la existencia de grandes bloques que no sean asignados a los usuarios finales. Debido a restricciones de tipo técnico y la posibilidad de sobrecarga en las tablas de rutas, deberán ser implementadas ciertas políticas para asegurar el cumplimiento de los objetivos de conservación y ruteabilidad. En este capítulo se habla de tamaños de prefijos y tamaños de bloques. La notación estándar implica que cuando se hable de prefijos mayores, se hace referencia a bloques de menor tamaño. Por ejemplo, cuando se menciona que cierta política se aplica a prefijo mayor a un /20, esto significa que se está hablando de un bloque menor de 16 /24. </p>
+<h3 id="232-aspectos-a-considerar-en-la-administracion-de-direcciones-ipv4">2.3.2. Aspectos a considerar en la administración de direcciones IPv4<a class="headerlink" href="#232-aspectos-a-considerar-en-la-administracion-de-direcciones-ipv4" title="Permanent link">#</a></h3>
+<p>La presente sección describe un conjunto de aspectos sobre los cuales se debe basar la relación tanto entre los Registros de Internet y sus clientes, como entre los Registros de Internet y LACNIC. </p>
+<h4 id="2321-las-direcciones-ipv4-son-delegadas">2.3.2.1. Las direcciones IPv4 son delegadas<a class="headerlink" href="#2321-las-direcciones-ipv4-son-delegadas" title="Permanent link">#</a></h4>
+<p>LACNIC distribuirá recursos de Internet en un esquema de delegación. Este esquema de distribución de los recursos tendrá una validez de un año. Es posible la renovación de esta distribución y estará sujeta a las condiciones establecidas en el momento de la renovación. </p>
+<h4 id="2322-politica-de-lento-inicio">2.3.2.2. Política de lento inicio<a class="headerlink" href="#2322-politica-de-lento-inicio" title="Permanent link">#</a></h4>
+<p>Los bloques de direcciones IPv4 son distribuidos a los IRs usando un procedimiento llamado de lento inicio. Los Proveedores de Servicios de Internet que soliciten bloques de direcciones IPv4 portables (independientes del proveedor) por primera vez recibirán una cantidad mínima basándose en sus requerimientos inmediatos, a excepción de lo establecido en el punto 2.3.3.3. ("Distribuciones directas a proveedores de servicio internet"). </p>
+<p>A partir de esta distribución inicial los bloques distribuidos pueden ser incrementados basándose en la verificación de la utilización de los bloques en uso de acuerdo a la información provista a LACNIC. De esta manera LACNIC será responsable de determinar las distribuciones iniciales y subsecuentes. Las distribuciones de direcciones IPv4 iniciales deberán permitir a los IRs operar al menos por doce meses sin requerir nuevas ampliaciones. </p>
+<p>Las distribuciones iniciales no estarán basadas sobre ninguna restricción de ruteo ni actuales ni futuras, sino sobre necesidades reales y comprobables de uso de direcciones IPv4. </p>
+<p>Asimismo, el número de direcciones IPv4 proyectado por el solicitante es útil para la planeación de los requerimientos futuros del mismo. </p>
+<h4 id="2323-bloques-distribuidos">2.3.2.3. Bloques distribuidos<a class="headerlink" href="#2323-bloques-distribuidos" title="Permanent link">#</a></h4>
+<p>Para asegurar la eficiente implementación y uso de esquemas sin clases (CIDR), LACNIC distribuirá bloques de direcciones IPv4 en base a los límites soportados por este esquema. Para ayudar en el eficiente despliegue de CIDR, los Proveedores de Servicios de Internet (ISPs) y Usuarios Finales son alentados a solicitar espacio de direcciones IP inicialmente a sus proveedores inmediatos (upstream providers). El proveedor inmediato deberá mantener el control de los bloques asignados al término del contrato con sus clientes. </p>
+<h4 id="2324-evitar-la-fragmentacion-de-bloques">2.3.2.4. Evitar la fragmentación de bloques<a class="headerlink" href="#2324-evitar-la-fragmentacion-de-bloques" title="Permanent link">#</a></h4>
+<p>Las direcciones IP bajo el esquema CIDR son distribuidas a los IRs en bloques. Se recomienda que la publicación de estos bloques en las tablas de ruteo permanezca intacta. Más específicamente, los ISPs deberán tratar las asignaciones de direcciones IP a sus clientes como préstamos por la duración de la conectividad. En la terminación del contrato de conectividad de Internet, por ejemplo, si un cliente se cambia a otro ISP, el cliente tendrá que regresar las direcciones IPv4 que se encuentren actualmente en uso y renumerarlas con las nuevas direcciones IPv4 del nuevo proveedor. Nuevos pedidos de direcciones IP estarán condicionados a la finalización de esta tarea. El IR deberá ofrecer suficiente tiempo para que el proceso de renumeración finalice antes de que estas direcciones IP sean utilizadas de nuevo por otro cliente. </p>
+<h4 id="2325-documentacion">2.3.2.5. Documentación<a class="headerlink" href="#2325-documentacion" title="Permanent link">#</a></h4>
+<p>Los Registros de Internet deberán utilizar de manera eficiente el conjunto de direcciones IPv4 que les haya sido distribuido. Para este fin, los IRs deben documentar la justificación de cada asignación de direcciones IPv4. Ante requerimiento de LACNIC, esta información deberá ser proporcionada por el IR correspondiente. LACNIC no hará distribuciones complementarias a los Registros de Internet que no tengan correctamente documentado el uso de los bloques que ya se le hayan sido distribuidos previamente. Las distribuciones actuales podrán también ser revisadas en estos casos. </p>
+<p>La documentación a solicitar puede incluir: </p>
+<ul>
+<li>Planes de Ingeniería. </li>
+<li>Plan de subdivisión de redes (subnetting) y agregaciones. </li>
+<li>Descripción de la topología de la red. </li>
+<li>Descripción de planes de ruteo de la red. </li>
+<li>Comprobantes de inversiones (equipamientos). </li>
+<li>Otros documentos relevantes. </li>
+</ul>
+<h4 id="2326-uso-del-esquema-sin-clases-cidr">2.3.2.6. Uso del esquema sin clases (CIDR)<a class="headerlink" href="#2326-uso-del-esquema-sin-clases-cidr" title="Permanent link">#</a></h4>
+<p>Debido a los requerimientos de incrementar la eficiencia en la utilización de los espacios de direcciones IPv4, todas las distribuciones y o asignaciones son hechas con la suposición de que las organizaciones hacen uso de máscaras de subred de longitud variable (VLSM) y esquema sin clases (CIDR) dentro de sus redes. 
+El uso de esquemas de clases es generalmente inaceptable debido a la limitada disponibilidad de espacio libre para direcciones IPv4. </p>
+<h4 id="2327-direccionamiento-estatico">2.3.2.7. Direccionamiento estático<a class="headerlink" href="#2327-direccionamiento-estatico" title="Permanent link">#</a></h4>
+<p>Debido a restricciones en la disponibilidad de direcciones IPv4, el uso de asignación de direcciones IPv4 de forma estática (ejemplo, una dirección por cliente) para usuarios dial−up no será respaldado de ninguna manera por LACNIC. Se entiende que el uso del direccionamiento estático puede facilitar algunos aspectos administrativos. Sin embargo, la actual tasa de consumo de las direcciones IPv4, no permiten justificar la asignación de direcciones estáticas por razones administrativas. Por esta razón, se espera que las organizaciones que están considerando el uso de asignación de direcciones IPv4 en forma estática, investiguen e implementen tecnologías de asignación dinámica. </p>
+<h4 id="2328-webhosting">2.3.2.8. Webhosting<a class="headerlink" href="#2328-webhosting" title="Permanent link">#</a></h4>
+<p>Con el desarrollo del protocolo HTTP 1.1 se ha eliminado la necesidad de la reserva de una dirección IP para cada dominio web en casos de múltiples websites en el mismo servidor. LACNIC promueve el desarrollo del alojamiento de páginas web basados en el uso del nombre en contraste al basado en direcciones IPv4. </p>
+<p>Por lo tanto, este último caso no será aceptado como justificación de uso de direcciones IPv4. LACNIC considerará las excepciones en que las aplicaciones necesiten el uso de webhosting basado en direcciones IPv4 lo que deberá ser debidamente descrito y justificado. </p>
+<h4 id="2329">2.3.2.9.<a class="headerlink" href="#2329" title="Permanent link">#</a></h4>
+<p>Este punto ha sido intencionalmente dejado en blanco </p>
+<h4 id="23210">2.3.2.10.<a class="headerlink" href="#23210" title="Permanent link">#</a></h4>
+<p>Este punto ha sido intencionalmente dejado en blanco </p>
+<h4 id="23211">2.3.2.11.<a class="headerlink" href="#23211" title="Permanent link">#</a></h4>
+<p>Este punto ha sido intencionalmente dejado en blanco </p>
+<h4 id="23212-supervision-de-asignaciones">2.3.2.12. Supervisión de asignaciones<a class="headerlink" href="#23212-supervision-de-asignaciones" title="Permanent link">#</a></h4>
+<h5 id="232121-ventana-de-asignacion">2.3.2.12.1. Ventana de asignación<a class="headerlink" href="#232121-ventana-de-asignacion" title="Permanent link">#</a></h5>
+<p>Los ISPs podrán hacer asignaciones a sus clientes, de bloques menores de 16 /24 es decir prefijos mayores a /20, siguiendo la política definida por LACNIC en el presente documento. En algunos casos, la asignación deberá ser consultada con LACNIC o con el NIR correspondiente a los efectos de asegurar la optimización del uso del espacio de direcciones IP y la correcta aplicación de las políticas de LACNIC. </p>
+<p>LACNIC define como ventana de asignación, las asignaciones de bloques mayores o iguales a 2 /24 o sea prefijos menores o iguales a /23. Estas asignaciones deberán ser consultadas con LACNIC o con el NIR correspondiente. La comunicación entre los ISPs y LACNIC o el NIR correspondiente, deberá incluir la misma información y justificaciones establecidas para los usuarios finales, contenida en este documento. </p>
+<h5 id="232122-distribuciones-a-los-nirs">2.3.2.12.2. Distribuciones a los NIRs<a class="headerlink" href="#232122-distribuciones-a-los-nirs" title="Permanent link">#</a></h5>
+<p>Los NIRs quedarán exceptuados del cumplimiento del punto 3.2.12.1. En su lugar estarán sujetos a esquemas de auditorías más estrictos de acuerdo a lo estipulado en los contratos entre LACNIC y los NIRs. </p>
+<p>Estas auditorías serán hechas al menos una vez al año y con periodicidad mayor en caso de que sea necesario. </p>
+<h4 id="23213-registro-de-asignaciones">2.3.2.13. Registro de asignaciones<a class="headerlink" href="#23213-registro-de-asignaciones" title="Permanent link">#</a></h4>
+<p>Todas las asignaciones de bloques IPv4 de prefijos /29 o menores (bloques mayores) realizadas por ISPs a los clientes conectados a su red y los usuarios de los servicios prestados deben registrarse en la base de datos WHOIS de LACNIC en un plazo máximo de 7 días a partir de la asignación. </p>
+<p>La información disponible en la base de datos WHOIS también será utilizada por LACNIC cuando analice las solicitudes de bloques IPv4 adicionales realizadas por el ISP. </p>
+<p>El Registro de asignaciones también es necesario por los siguientes motivos: </p>
+<ul>
+<li>Para asegurarse que el IR finalizó o está finalizando la distribución de espacio de direcciones de modo que se justifique la distribución de un nuevo espacio adicional. </li>
+<li>Para proporcionar información a la comunidad Internet sobre cuál organización está usando el espacio de direcciones IPv4 incluyendo a la persona de contacto en caso de problemas de tipo operativo, de seguridad, etc. </li>
+<li>Para el estudio de distribuciones de direcciones IPv4 en la región. </li>
+<li>Para facilitar la geolocalización de las subasignaciones realizadas por los miembros en nuestra región. </li>
+</ul>
+<h5 id="232131-informacion-necesaria">2.3.2.13.1. Información necesaria<a class="headerlink" href="#232131-informacion-necesaria" title="Permanent link">#</a></h5>
+<p>Las asignaciones registradas en la base de datos WHOIS de LACNIC deben incluir la siguiente información sobre quien recibe la asignación: nombre de la organización, dirección postal, contactos administrativos, técnicos y de abuso con números de teléfono e correos electrónicos actualizados. </p>
+<h6 id="2321311-clientes-residenciales">2.3.2.13.1.1 Clientes residenciales<a class="headerlink" href="#2321311-clientes-residenciales" title="Permanent link">#</a></h6>
+<p>Los ISPs que ofrezcan servicios a clientes residenciales pueden registrar en la base de datos WHOIS de LACNIC bloques de direcciones en uso por los equipos o áreas de atención al cliente, por servicio. </p>
+<p>La información que se registre debe indicar el área de servicio, dirección postal principal del ISP, contactos administrativos, técnicos y de abuso del ISP con números de teléfono y correos electrónicos actualizados. </p>
+<p>Las asignaciones deben realizarse por bloques de direcciones que totalizan la cantidad de clientes atendidos en el área o por equipo. </p>
+<h6 id="2321312-privacidad-de-clientes-residenciales">2.3.2.13.1.2 Privacidad de Clientes residenciales<a class="headerlink" href="#2321312-privacidad-de-clientes-residenciales" title="Permanent link">#</a></h6>
+<p>Los clientes residenciales que reciban asignación de bloques IPv4 de prefijo /29 o menores (bloques mayores) no están obligados a tener sus datos registrados en la base de datos WHOIS de LACNIC. </p>
+<p>El ISP cuyo cliente residencial reciba asignación IPv4 de prefijo /29 o menor (bloque mayor) puede optar por registrar la asignación en la base de datos WHOIS de LACNIC colocando sus propios datos o código que le sirva de referencia interna. Los datos de contactos administrativos, técnicos y de abuso deben ser los del ISP. </p>
+<h5 id="232132-geolocalizacion">2.3.2.13.2 Geolocalización<a class="headerlink" href="#232132-geolocalizacion" title="Permanent link">#</a></h5>
+<p>Además de la información disponible en WHOIS, se publicar en un archivo las asignaciones hechas por LACNIC y las subasignaciones realizadas por sus miembros junto con la información del país en que se encuentra asignado el prefijo. El archivo podrá ser descargado por la comunidad de forma libre. Este archivo podrá ser empleado entre otras cosas para geolocalizar una IP. </p>
+<p>El formato y lugar de la publicación será definido por el staff de LACNIC.</p>
+<h4 id="23214-seguridad-y-confidencialidad">2.3.2.14. Seguridad y Confidencialidad<a class="headerlink" href="#23214-seguridad-y-confidencialidad" title="Permanent link">#</a></h4>
+<p>LACNIC mantendrá sistemas y prácticas que cuiden y protejan la confidencialidad de toda información que a LACNIC le sea entregada en el envío de documentación para la justificación de la distribución o asignación de direcciones IPv4. </p>
+<h4 id="23215-igualdad-en-el-procesamiento-de-solicitudes">2.3.2.15. Igualdad en el procesamiento de solicitudes<a class="headerlink" href="#23215-igualdad-en-el-procesamiento-de-solicitudes" title="Permanent link">#</a></h4>
+<p>LACNIC tomará todas las solicitudes en el orden estricto en el cual estas sean recibidas, sin importar factores geográficos, demográficos, idiomáticos, etc. LACNIC bajo ninguna circunstancia dará trato especial o hará excepciones al estándar establecido para el procesamiento de solicitudes. Para esto contará con un sistema de numeración de solicitudes que le permita una buena administración de las mismas. </p>
+<h4 id="23216-microasignaciones">2.3.2.16. Microasignaciones<a class="headerlink" href="#23216-microasignaciones" title="Permanent link">#</a></h4>
+<p>LACNIC hará microasignaciones de prefijo mayor al estándar (bloque menor) en casos especiales que se enumeran en el punto 2.3.3 "Políticas para la distribución de espacio inicial de direcciones IPv4". </p>
+<h4 id="23217-fusiones-adquisiciones-reorganizaciones-o-reubicaciones">2.3.2.17. Fusiones, adquisiciones, reorganizaciones o reubicaciones<a class="headerlink" href="#23217-fusiones-adquisiciones-reorganizaciones-o-reubicaciones" title="Permanent link">#</a></h4>
+<p>Se recuerda que las políticas de LACNIC no reconocen la venta o transferencia no autorizada de los recursos asignados o distribuidos y considerará tales transferencias inválidas, con excepción de las transferencias que se sujeten a la sección 2.3.2.18. Sin embargo, LACNIC procesará y registrará la transferencia de recursos IPv4 como resultado de fusiones, adquisiciones, reorganizaciones o reubicaciones, ya sean parciales o completas, tanto si se trata de recursos de ISPs o usuarios finales. Para tramitar dicho cambio y proceder al registro, se deberá proporcionar documentación legal que lo respalde a criterio de LACNIC, por ejemplo: </p>
+<ul>
+<li>Una copia del documento legal que respalda las transferencias de activos. </li>
+<li>Un inventario detallado de todos los activos utilizados por el solicitante con el cual mantendrá en uso el espacio el recurso. </li>
+<li>Una lista de los clientes de la parte solicitante que usa los recursos. </li>
+</ul>
+<p>Se deberá justificar también que sigue manteniéndose la necesidad del conjunto de los recursos, obligándose si fuera el caso, al retorno de los excedentes de los mismos o alternativamente a su transferencia a terceras partes, atendiendo a lo que corresponda según las políticas vigentes (2.3.3. y 2.3.4.). En el caso de un retorno, LACNIC determinará las condiciones y plazo.</p>
+<h4 id="23218-transferencias-de-direcciones-ipv4">2.3.2.18. Transferencias de direcciones IPv4<a class="headerlink" href="#23218-transferencias-de-direcciones-ipv4" title="Permanent link">#</a></h4>
+<p>Se permitirán transferencias de direcciones IPv4 entre LIRs y/o usuarios finales, en adelante entidades, bajo las condiciones establecidas en la presente sección. Esta política aplica tanto a los casos en que alguna de las entidades involucradas sea de otra región (transferencias inter-RIR), como para transferencias dentro de la región LACNIC (transferencias intra-RIR). </p>
+<p>!##### 2.3.2.18.1. El tamaño mínimo de bloque que se permite transferir es un /24.</p>
+<p>!##### 2.3.2.18.2. Para que una entidad dentro de LACNIC, pueda ser el destinatario de una transferencia, debe pasar primero por el proceso de justificación de recursos IPv4 ante LACNIC. Es decir, la entidad debe justificar ante LACNIC la distribución/asignación inicial/ adicional, según sea el caso, de acuerdo a las políticas vigentes. Si el destinatario es una entidad de otra región, estará sujeta a los criterios, verificaciones y requisitos del RIR correspondiente. </p>
+<p>!##### 2.3.2.18.3. LACNIC o el RIR correspondiente (en función de la dirección de la transferencia), verificará la titularidad del recurso a transferir y que esté libre de disputas. En los casos de transferencias intra-RIR, ambas entidades deberán presentar a LACNIC una copia firmada del documento legal que respalde la transferencia. En los casos de transferencias inter-RIR, la documentación que respalda la operación será la acordada entre ambos RIR. </p>
+<p>!##### 2.3.2.18.4. LACNIC mantendrá una bitácora de transferencias, accesible públicamente, de todas las transferencias de bloques IPv4 que se registren ante él. En dicha bitácora se registrará la fecha de la operación, la entidad fuente de la transferencia, la entidad destino, las direcciones transferidas y, si fuera una transferencia inter-RIR, los RIRs fuente y destino. </p>
+<p>!##### 2.3.2.18.5. La entidad fuente de la transferencia quedará automáticamente inelegible para recibir distribuciones y/o asignaciones de recursos IPv4 por parte de LACNIC durante un año, a partir de la fecha de operación registrada en la bitácora de transferencias. </p>
+<p>!##### 2.3.2.18.6. Las direcciones previamente transferidas no podrán ser subsecuentemente transferidas (ni total, ni parcialmente) durante un periodo de un año, a partir de la fecha de operación registrada en la bitácora de transferencias.</p>
+<p>!##### 2.3.2.18.7. Una vez concluida la transferencia, LACNIC modificará la información del recurso transferido para reflejar el cambio de titular. </p>
+<p>!##### 2.3.2.18.8. Cada entidad, tanto la que transfiere como la que recibe, quedará sujeta a las políticas y condiciones de membresía del RIR correspondiente. </p>
+<p>!##### 2.3.2.18.9. Las direcciones provenientes de distribuciones o asignaciones de LACNIC, ya sean iniciales o adicionales, no podrán ser sujetos a transferencias (ni totales ni parciales) durante un periodo de tres años a partir de su fecha de distribución o asignación. </p>
+<p>!##### 2.3.2.18.10. Los recursos legados transferidos entrantes, dejarán de ser considerados legados.</p>
+<h3 id="233-distribucion-y-asignacion-inicial-de-direcciones-ipv4">2.3.3. Distribución y asignación inicial de direcciones IPv4<a class="headerlink" href="#233-distribucion-y-asignacion-inicial-de-direcciones-ipv4" title="Permanent link">#</a></h3>
+<p>LACNIC distribuirá direcciones IPv4 a organizaciones que entren en los siguientes casos: </p>
+<ul>
+<li>Distribuciones a Proveedores de Servicios de Internet </li>
+<li>Micro asignaciones a Infraestructura Crítica </li>
+<li>Distribuciones Directas a Proveedores de Servicios de Internet. </li>
+<li>Asignaciones a Usuarios Finales. </li>
+</ul>
+<p>Esta sección describe en detalle las políticas a aplicar por LACNIC para la distribución inicial de direcciones IPv4 portables (independiente del proveedor) en cada uno de estos casos. Debido a que el número de direcciones IPv4 disponibles en Internet es limitado, muchos factores deben ser considerados en la determinación de la distribución del espacio de direcciones IPv4. Por consiguiente, el espacio de direcciones IPv4 es distribuido a los ISPs siguiendo un modelo de lento inicio. Las distribuciones están basadas en una necesidad justificada actual y no en base a predicciones de número de clientes, estudios de mercado, etc. </p>
+<h4 id="2331-distribucion-inicial-a-isps">2.3.3.1. Distribución inicial a ISPs<a class="headerlink" href="#2331-distribucion-inicial-a-isps" title="Permanent link">#</a></h4>
+<p>El tamaño mínimo de distribución inicial aplicado a Proveedores de Servicios de Internet establecido en la región LACNIC es de un /24. </p>
+<p>2.3.3.1.1. Requisitos para un prefijo /24 a un /22 </p>
+<p>Para calificar para la distribución de un prefijo /24 a un /22 el ISP solicitante deberá cumplir los siguientes requisitos </p>
+<ol>
+<li>Demostrar el uso o la necesidad inmediata de al menos el 25% del prefijo solicitado. </li>
+<li>Entregar un plan detallado de uso de 50% de uso del prefijo solicitado para un año. </li>
+<li>Si previamente había un bloque asignado por un proveedor, y se desea mantener el mismo para evitar la renumeración, y hay acuerdo entre ambas partes, se podrá ceder dicho bloque (con el cambio de titularidad en el whois, a través de LACNIC).</li>
+</ol>
+<p>Si se ha justificado espacio adicional y es posible su distribución, el receptor podrá decidir si la cesión le es conveniente y recibe un bloque por el espacio adicional o prefiere un único bloque por el total y, por lo tanto, renumera. En caso de renumeración, el bloque previamente asignado deberá ser retornado en un plazo máximo de 12 meses. Excepcionalmente, este plazo podrá ser extendido en 6 meses adicionales si se justifica que no ha habido tiempo para la consecución de los recursos que precisa y la renumeración correspondiente. </p>
+<ol>
+<li>En caso de que el solicitante aun no cuente con un bloque IPv6 asignado por LACNIC, solicitar al mismo tiempo un bloque IPv6 cumpliendo con la política aplicable.</li>
+</ol>
+<h5 id="23312-requisitos-para-un-prefijo-21-o-menor-bloque-de-8-24-o-mas">2.3.3.1.2. Requisitos para un prefijo /21 o menor (bloque de 8 /24 o más)<a class="headerlink" href="#23312-requisitos-para-un-prefijo-21-o-menor-bloque-de-8-24-o-mas" title="Permanent link">#</a></h5>
+<p>En caso de que el ISP solicitante requiera una distribución inicial de direcciones IPv4 a partir de un prefijo /21 deberá cumplir los siguientes requerimientos </p>
+<ol>
+<li>
+<p>Proveer información de las asignaciones realizadas por prefijos de longitudes /29 o menores (más de 8 direcciones IPv4) en el WHOIS de LACNIC </p>
+</li>
+<li>
+<p>Proveer documentación justificando la distribución de espacio de direcciones inicial. (Llenado de la plantilla de solicitud de direcciones IPv4 para ISP). Se deberá incluir información detallada mostrando cómo será utilizado ese recurso dentro de los periodos de tres, seis y doce meses </p>
+</li>
+<li>
+<p>Si previamente había un bloque asignado por un proveedor, y se desea mantener el mismo para evitar la renumeración, y hay acuerdo entre ambas partes, se podrá ceder dicho bloque (con el cambio de titularidad en el whois, a través de LACNIC).</p>
+</li>
+</ol>
+<p>Si se ha justificado espacio adicional y es posible su distribución, el receptor podrá decidir si la cesión le es conveniente y recibe un bloque por el espacio adicional o prefiere un único bloque por el total y, por lo tanto, renumera. En caso de renumeración, el bloque previamente asignado deberá ser retornado en un plazo máximo de 12 meses. Excepcionalmente, este plazo podrá ser extendido en 6 meses adicionales si se justifica que no ha habido tiempo para la consecución de los recursos que precisa y la renumeración correspondiente. </p>
+<ol>
+<li>En caso de que el solicitante aun no cuente con un bloque IPv6 asignado por LACNIC, solicitar al mismo tiempo un bloque IPv6 cumpliendo con la política aplicable.</li>
+</ol>
+<p>Adicionalmente se deberán considerar los siguientes requerimientos dependiendo del status multiproveedor o no multiproveedor del ISP solicitante:</p>
+<p>Si el solicitante es un ISP multiproveedor, pronto a serlo o tiene necesidades de interconexión:</p>
+<p>Estar utilizando eficientemente un equivalente al 25% del espacio solicitado como mínimo (contiguo o no).</p>
+<p>En caso de ser multiproveedor indicar nombre y número de sistema autónomo de sus proveedores.</p>
+<p>En caso de estar pronto a ser multiproveedor o tener necesidades de interconexión con otros sistemas autónomos describir detalladamente el plan y los plazos (es recomendable presentar contratos o cartas de intención firmadas).</p>
+<p>Si el solicitante es un ISP no multiproveedor: </p>
+<p>Estar utilizado eficientemente un 50% del espacio solicitado como mínimo (contiguo o no).</p>
+<h4 id="2332-microasignaciones-a-infraestructura-critica">2.3.3.2. Microasignaciones a infraestructura crítica<a class="headerlink" href="#2332-microasignaciones-a-infraestructura-critica" title="Permanent link">#</a></h4>
+<p>Se llaman microasignaciones a aquellas que signifiquen prefijos mayores o iguales a un / 22 pero siempre menores o iguales a un /24. LACNIC podrá realizar este tipo de asignación en casos de proyectos e infraestructuras de redes claves o críticas para la región como son IXP (Internet Exchange Point), NAP (Network Access Point), RIR, ccTLD entre otros. </p>
+<p>En el caso de los IXP o NAP para poder solicitar este tipo de asignación las organizaciones deberán cumplir los siguientes requisitos: </p>
+<ol>
+<li>
+<p>Documentar adecuadamente los siguientes aspectos: 
+1.1. Demostrar a través de sus estatutos su calidad de IXP o NAP. Deberá poseer al menos tres miembros y una política abierta para la asociación de nuevos miembros. 
+1.2. Enviar un diagrama de la estructura de red de la organización. 
+1.3. Documentar el plan de numeración a instrumentar. </p>
+</li>
+<li>
+<p>Proveer un plan de utilización para los próximos tres y seis meses. En el resto de las solicitudes se estudiarán basados en el análisis de documentación que justifique los aspectos críticos y/o claves del proyecto. </p>
+</li>
+<li>
+<p>En caso de que el solicitante aun no cuente con un bloque IPv6 asignado por LACNIC, solicitar al mismo tiempo un bloque IPv6 cumpliendo con la política aplicable. </p>
+</li>
+</ol>
+<p>La organización que reciba una micro asignación no podrá realizar asignaciones con estas direcciones IPv4.</p>
+<h4 id="2333-distribuciones-directas-a-proveedores-de-servicio-de-internet">2.3.3.3. Distribuciones directas a proveedores de servicio de internet<a class="headerlink" href="#2333-distribuciones-directas-a-proveedores-de-servicio-de-internet" title="Permanent link">#</a></h4>
+<p>LACNIC reconoce que pueden existir circunstancias donde existan necesidades justificadas de realizar una distribución inicial de un /20 o un prefijo menor. </p>
+<p>LACNIC podrá realizar este tipo de distribución a aquellas organizaciones que cumplan con los siguientes requisitos: </p>
+<ol>
+<li>
+<p>Ser organización multiproveedor, o ser proveedor de servicios de Internet y demostrar la posibilidad de Interconexión con otros proveedores o puntos de intercambio de tráfico (NAP/IXP). </p>
+</li>
+<li>
+<p>Enviar una descripción detallada de la topología de red. </p>
+</li>
+<li>
+<p>Enviar un portafolio con descripción detallada de los servicios a ofrecer. </p>
+</li>
+<li>
+<p>Enviar un plan detallado del despliegue del uso del direccionamiento a tres, seis y doce meses. </p>
+</li>
+<li>
+<p>En caso de que el solicitante aun no cuente con un bloque IPv6 asignado por LACNIC, solicitar al mismo tiempo un bloque IPv6 cumpliendo con la política aplicable. </p>
+</li>
+</ol>
+<p>LACNIC puede en cualquier momento solicitar para este tipo de distribuciones información adicional que ayude a la justificación de un mínimo de distribución.</p>
+<h4 id="2334-asignaciones-a-usuarios-finales">2.3.3.4. Asignaciones a Usuarios Finales<a class="headerlink" href="#2334-asignaciones-a-usuarios-finales" title="Permanent link">#</a></h4>
+<p>LACNIC asignará bloques de direcciones IPv4 a usuarios finales que requieren espacio de direcciones IPv4 para su uso interno, para el funcionamiento de sus redes. </p>
+<p>Generalmente los usuarios finales reciben espacio de direcciones IPv4 de sus proveedores inmediatos, no directamente de LACNIC. Las direcciones IPv4 portables (independientes del proveedor) obtenidas directamente de LACNIC u otros Registros Regionales no están garantizadas a ser globalmente ruteables. </p>
+<p>Por esta razón, los usuarios finales deberían contactar a sus Proveedores de Servicios de Internet para asegurar su conectividad dentro de la red. </p>
+<p>Los usuarios finales que no están conectados a un ISP y/o planean no estar conectados a Internet se les recomienda usar direcciones IPv4 privadas. Pueden consultar la descripción de tales direcciones IP en el RFC 1918.</p>
+<h5 id="23341-informacion-requerida">2.3.3.4.1. Información requerida<a class="headerlink" href="#23341-informacion-requerida" title="Permanent link">#</a></h5>
+<p>LACNIC solicitará la siguiente información a todos los usuarios finales que solicitan bloques de direcciones IPv4. </p>
+<ol>
+<li>Proveer información detallada mostrando como el bloque solicitado será utilizado dentro de tres, seis y doce meses </li>
+<li>Entregar planes de subneteo por al menos un año, incluyendo máscaras de subred y números de hosts sobre cada subred. El uso de VLSM es requerido. </li>
+<li>Entregar una descripción detallada de la topología de la red. </li>
+<li>Realizar una descripción detallada de los planes de ruteo de la red, incluyendo los protocolos de ruteo a ser usado también como cualquier limitación existente. </li>
+<li>En caso de que el solicitante aun no cuente con un bloque IPv6 asignado por LACNIC, solicitar al mismo tiempo un bloque IPv6 cumpliendo con la política aplicable.</li>
+</ol>
+<h5 id="23342-tasa-de-utilizacion">2.3.3.4.2. Tasa de utilización<a class="headerlink" href="#23342-tasa-de-utilizacion" title="Permanent link">#</a></h5>
+<p>La tasa de utilización es un factor clave a justificar para dimensionar el tamaño de la asignación. La tasa de utilización es el porcentaje de direcciones IPv4 que la organización utilizará en un espacio de tiempo determinado. El adoptado por LACNIC es: </p>
+<p>25% de utilización inmediata del bloque solicitado. 
+50% de utilización a un año del bloque solicitado. </p>
+<p>Una tasa de utilización más grande puede ser requerida basada en requerimientos individuales. Si la organización solicitante no cumple con esos parámetros se le podrán retirar las direcciones negociando un tiempo razonable para su renumeración. </p>
+<h5 id="23343tamano-de-la-asignacion-y-procedimiento">2.3.3.4.3.Tamaño de la asignación y procedimiento<a class="headerlink" href="#23343tamano-de-la-asignacion-y-procedimiento" title="Permanent link">#</a></h5>
+<p>El solicitante debe justificar que anunciará el espacio asignado, con su propio sistema autónomo, al menos a otro sistema autónomo. El tamaño de asignación mínima de direcciones IPv4 para un usuario final es de un bloque con prefijo /24 y el tamaño máximo será un /20, el cual deberá ser justificado, de acuerdo con la tasa de utilización (sección 2.3.3.4.2). </p>
+<p>Si previamente había un bloque asignado por un proveedor, y se desea mantener el mismo para evitar la renumeración, y hay acuerdo entre ambas partes, se podrá ceder dicho bloque (con los cambios correspondientes en el whois). Si se ha justificado espacio adicional y es posible su asignación, el receptor podrá decidir si la cesión le es conveniente y recibe un bloque por el espacio adicional o prefiere un único bloque por el total y, por lo tanto, renumera. En caso de renumeración, el bloque previamente asignado deberá ser retornado en un plazo máximo de 6 meses. Excepcionalmente, este plazo podrá ser extendido en 6 meses adicionales si se justifica que no ha habido tiempo para la consecución de los recursos que precisa y la renumeración correspondiente. </p>
+<p>Para asignaciones adicionales se seguirán las políticas incluidas en la sección 2.3.4 aplicables a los usuarios finales. </p>
+<h3 id="234-politicas-para-la-distribucion-de-espacio-adicional-de-direcciones-ipv4">2.3.4. Políticas para la distribución de espacio adicional de direcciones IPv4<a class="headerlink" href="#234-politicas-para-la-distribucion-de-espacio-adicional-de-direcciones-ipv4" title="Permanent link">#</a></h3>
+<p>Esta política es presentada con el propósito de asistir a los Registros de Internet en el proceso de solicitud de espacio adicional de direcciones IPv4. El factor más importante en la evaluación de las solicitudes de espacio adicional de direcciones IPv4 es la revisión del espacio actual de direcciones lPv4 de las entidades solicitantes. </p>
+<p>La entidad solicitante debe haber utilizado al menos el 80% de su espacio de direcciones IPv4 de las distribuciones realizadas anteriormente por el RIR o NIR correspondiente con el fin de recibir un espacio adicional. Esto incluye el espacio asignados a sus clientes. Por consiguiente, es importante que los IRs requieran a sus clientes seguir las prácticas de eficiente utilización descritas en estas políticas. </p>
+<p>Para la distribución de nuevos bloques de direcciones IPv4 los siguientes son los aspectos a cumplir:</p>
+<ol>
+<li>
+<p>El primer paso en el proceso es verificar la utilización de al menos el 80% de las distribuciones anteriores. Este porcentaje de utilización será basado solamente en aquellas redes anunciadas con direcciones IPv4 conectadas a Internet. El método disponible para mostrar esta utilización para aquellos IRs que han asignados direcciones IPv4 a sus clientes, es a través de los registros en la base de datos WHOIS de LACNIC. Hasta que se verifique el uso de por lo menos el 80% de su bloque previamente distribuido se podrá seguir considerando su solicitud. El uso del 80% de las direcciones IP distribuidas previamente cubre también aquellas direcciones utilizadas para uso interno y clientes dial−up de la compañía. Para este último caso pueden justificar su utilización a través del reporte del apéndice 3 [Reporte adicional para la distribución de espacio de direcciones IPv4]. Organizaciones que realicen asignaciones estáticas, podrán justificar la utilización a través del reporte del apéndice 4 [Reporte de distribución de recursos IPv4]. Una vez que se haya verificado al menos el 80% de utilización del espacio previamente distribuido, se continuará el proceso de solicitud de espacio adicional. </p>
+</li>
+<li>
+<p>Las organizaciones deberán demostrar el uso de las políticas de LACNIC en la asignación de espacio a sus clientes, en especial en lo referido a:</p>
+</li>
+<li>
+<p>La emisión de prefijos de longitudes más grandes que /24, donde esto sea posible. </p>
+</li>
+<li>
+<p>Verificar que las asignaciones de bloques dentro de la ventana de asignación fueron enviados para la previa autorización de LACNIC. </p>
+</li>
+<li>
+<p>Las organizaciones deberán exigir que sus clientes se adhieran a los siguientes criterios: </p>
+</li>
+<li>
+<p>La información de las asignaciones menores a un /29 debe de estar disponible vía WHOIS y deben cumplir con el 80% de su espacio utilizado antes de emitirles a sus clientes el espacio adicional. </p>
+</li>
+<li>
+<p>Las políticas de LACNIC para la comunidad en Internet en general son comunicadas y seguidas por sus clientes. </p>
+</li>
+<li>
+<p>En la revisión de solicitudes para direcciones IPv4 adicionales, LACNIC también revisará si el espacio designado para devolución fue realmente devuelto en los tiempos descritos en este documento. </p>
+</li>
+<li>
+<p>Estar al día en el registro de la resolución inversa del espacio de direcciones IPv4 administrado. El registro de la resolución inversa también debe coincidir con el 80% de utilización. </p>
+</li>
+<li>
+<p>Para la distribución de bloques adicionales, LACNIC verificará que la organización solicitante este al día en sus obligaciones contractuales. </p>
+</li>
+<li>
+<p>El solicitante debe tener al menos un bloque IPv6 asignado por LACNIC o en caso contrario debe solicitar simultáneamente un bloque inicial IPv6 cumpliendo con la política aplicable vigente para tal fin. En caso de que el solicitante ya cuente con un bloque IPv6 previamente asignado remitirá a LACNIC un documento breve que describa sus avances en la integración del protocolo IPv6. </p>
+</li>
+<li>
+<p>El paso final es determinar la distribución apropiada a ser emitida. Para poder determinar el tamaño de la distribución a realizar se deberá proveer información detallada mostrando como será utilizado el espacio de direcciones IPv4 dentro de los periodos de tres, seis y doce meses. La política del tamaño de la distribución adicional está basada en la eficiente utilización de espacio dentro de un marco de tiempo de 12 meses.</p>
+</li>
+</ol>
+<h3 id="235-reserva-especial-de-direcciones-ipv4-para-infraestructura-critica-para-la-operacion-de-internet-en-la-region">2.3.5. Reserva especial de direcciones IPv4 para infraestructura crítica para la operación de Internet en la región.<a class="headerlink" href="#235-reserva-especial-de-direcciones-ipv4-para-infraestructura-critica-para-la-operacion-de-internet-en-la-region" title="Permanent link">#</a></h3>
+<ol>
+<li>
+<p>Esta reserva entrará en funcionamiento una vez que haya terminado el espacio de direcciones considerado para la Fase 3 de Agotamiento de IPv4 en la región. </p>
+</li>
+<li>
+<p>LACNIC creará una reserva equivalente a un /15 de direcciones IPv4 para facilitar el despliegue de infraestructura considerara crítica o esencial para la operación de Internet en la región, entendiéndose por infraestructura crítica la definición mostrada en el punto 2.3.3.2 del Manual de Políticas. </p>
+</li>
+<li>
+<p>La solicitud de direccionamiento para infraestructura crítica puede realizarse en cualquier momento. </p>
+</li>
+<li>
+<p>La asignación de direcciones de esta reserva estará acotada a los siguientes tamaños: asignación mínima: /24 asignación máxima: /22 </p>
+</li>
+<li>
+<p>El tamaño de la asignación estará sujeto a la comprobación de uso y el análisis por LACNIC o el NIR correspondiente. </p>
+</li>
+<li>
+<p>Las direcciones asignadas bajo este punto deberán ser devueltas a LACNIC o al NIR correspondiente una vez que la necesidad original de la solicitud haya terminado. </p>
+</li>
+<li>
+<p>Las direcciones asignadas a partir de esta reserva no podrán ser utilizadas para un propósito distinto del que haya generado la solicitud. La ocurrencia de este evento ocasionará la revocación de la asignación y la subsecuente devolución de las direcciones a LACNIC o al NIR correspondiente.</p>
+</li>
+</ol>
+<h3 id="236-permiso-de-transferencia-y-no-devolucion-de-recursos">2.3.6. Permiso de transferencia y no-devolución de recursos<a class="headerlink" href="#236-permiso-de-transferencia-y-no-devolucion-de-recursos" title="Permanent link">#</a></h3>
+<p>Aunque inicialmente las políticas de distribución y asignación de direcciones están basadas en justificación de necesidad, la implantación de las transferencias deshabilita el mantenimiento de dicha justificación y, por lo tanto, no será obligatorio devolver recursos a LACNIC en caso de transferencias o fusiones y adquisiciones fallidas.</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Última actualización:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">12 de diciembre de 2022</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Volver al principio
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright LACNIC
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookies</h4>
+<p>Usamos cookies para reconocer sus visitas y preferencias repetidas, así como para medir la efectividad de nuestra documentación y si los usuarios encuentran lo que están buscando. Con su consentimiento, nos está ayudando a mejorar nuestra documentación.
+</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        <label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.top", "navigation.instant", "navigation.tracking", "navigation.sections", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>

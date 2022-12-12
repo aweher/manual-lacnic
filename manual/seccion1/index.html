@@ -1,0 +1,881 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Manual de Políticas de LACNIC">
+      
+      
+        <meta name="author" content="Ariel Weher">
+      
+      
+        <link rel="canonical" href="https://manual.lacnic.net/manual/seccion1/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>1. DEFINICIONES - Manual de Políticas LACNIC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Barlow";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-definiciones" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Manual de Políticas LACNIC" class="md-header__button md-logo" aria-label="Manual de Políticas LACNIC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Manual de Políticas LACNIC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. DEFINICIONES
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent=""  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="orange"  aria-hidden="true"  type="radio" name="__palette" id="__palette_2">
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Cambiar al modo oscuro"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Cambiar al modo oscuro" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Cambiar al modo claro"  type="radio" name="__palette" id="__palette_4">
+          
+            <label class="md-header__button md-icon" title="Cambiar al modo claro" for="__palette_3" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="http://github.com/aweher/manual-lacnic" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Manual de Políticas LACNIC" class="md-nav__button md-logo" aria-label="Manual de Políticas LACNIC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Manual de Políticas LACNIC
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="http://github.com/aweher/manual-lacnic" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Inicio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resumen/" class="md-nav__link">
+        Resumen
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./" class="md-nav__link">
+        1 Definiciones
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion2/" class="md-nav__link">
+        2 Direcciones IPv4
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion3/" class="md-nav__link">
+        3 Distribución de ASN
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion4/" class="md-nav__link">
+        4 Distribución y Asignación IPv6
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion5/" class="md-nav__link">
+        5 Delegación de Resolución Inversa
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion6/" class="md-nav__link">
+        6 Política de LAME Delegation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion7/" class="md-nav__link">
+        7 Revocación y Devolución de Recursos
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion8/" class="md-nav__link">
+        8 Solicitud de Bulk WHOIS
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion9/" class="md-nav__link">
+        9 Políticas Globales
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion10/" class="md-nav__link">
+        10 Distribución de Recursos para Investigación y Experimentación
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion11/" class="md-nav__link">
+        11 Políticas sobre el agotamiento IPv4
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seccion12/" class="md-nav__link">
+        12 Validación del abuse-c y abuse-mailbox
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apendices" class="md-nav__link">
+        A Apendices
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../referencias" class="md-nav__link">
+        B Referencias
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-iana-internet-assigned-number-authority" class="md-nav__link">
+    1.1. IANA (Internet Assigned Number Authority)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-registro-de-internet-ir" class="md-nav__link">
+    1.2. Registro de Internet (IR)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-registro-de-internet-regional-rir" class="md-nav__link">
+    1.3. Registro de Internet Regional (RIR)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-registro-de-internet-nacional-nir" class="md-nav__link">
+    1.4. Registro de Internet Nacional (NIR)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-registro-de-internet-local-lir" class="md-nav__link">
+    1.5. Registro de Internet Local (LIR)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-proveedor-de-servicios-de-internet-isp" class="md-nav__link">
+    1.6. Proveedor de Servicios de Internet (ISP)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-sitio-final-o-usuario-final-eu" class="md-nav__link">
+    1.7. Sitio Final o Usuario Final (EU)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-distribuir" class="md-nav__link">
+    1.8. Distribuir
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-asignar" class="md-nav__link">
+    1.9. Asignar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#110-el-sistema-de-registro-de-internet" class="md-nav__link">
+    1.10. El sistema de registro de Internet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#111-ruteabilidad-no-garantizada" class="md-nav__link">
+    1.11. Ruteabilidad no garantizada
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#112-multiproveedor" class="md-nav__link">
+    1.12. Multiproveedor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#113-roas-rpki-con-asn-0" class="md-nav__link">
+    1.13. ROAs RPKI con ASN 0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#114-principios-para-una-buena-administracioncustodia" class="md-nav__link">
+    1.14. Principios para una buena administración/custodia
+  </a>
+  
+    <nav class="md-nav" aria-label="1.14. Principios para una buena administración/custodia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1141-distribucion-racional" class="md-nav__link">
+    1.14.1. Distribución racional
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1142-registro-publico-de-datos" class="md-nav__link">
+    1.14.2. Registro público de datos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1143-distribucion-jerarquica" class="md-nav__link">
+    1.14.3. Distribución jerárquica
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#115-solicitud-de-recursos" class="md-nav__link">
+    1.15. Solicitud de recursos
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="http://github.com/aweher/manual-lacnic/edit/main/docs/manual/seccion1/index.md" title="Editar esta página" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="1-definiciones">1. DEFINICIONES<a class="headerlink" href="#1-definiciones" title="Permanent link">#</a></h1>
+<p>Los siguientes términos y sus definiciones son de gran importancia para la comprensión de los objetivos, contextos y políticas descritas en este documento. La distribución de espacio de los recursos de numeración sigue un esquema jerárquico. La responsabilidad de la administración del espacio de direcciones de IP está distribuida globalmente de acuerdo con la estructura jerárquica que se muestra debajo </p>
+<p><img alt="Estructura" src="../../assets/estructura.png" /></p>
+<h2 id="11-iana-internet-assigned-number-authority">1.1. IANA (Internet Assigned Number Authority)<a class="headerlink" href="#11-iana-internet-assigned-number-authority" title="Permanent link">#</a></h2>
+<p>IANA es responsable de distribuir parte del espacio global de las direcciones IP y los números de sistemas autónomos a Registros Regionales de acuerdo a necesidades establecidas. </p>
+<h2 id="12-registro-de-internet-ir">1.2. Registro de Internet (IR)<a class="headerlink" href="#12-registro-de-internet-ir" title="Permanent link">#</a></h2>
+<p>Un Registro de Internet (IR) es una organización responsable de la distribución de espacios de direcciones IP a sus miembros o clientes y del registro de esa distribución. Los IRs están clasificados de acuerdo a su función principal y alcance territorial dentro de la estructura jerárquica delineada en la figura de arriba. </p>
+<h2 id="13-registro-de-internet-regional-rir">1.3. Registro de Internet Regional (RIR)<a class="headerlink" href="#13-registro-de-internet-regional-rir" title="Permanent link">#</a></h2>
+<p>Los Registros de Internet Regionales (RIRs) son establecidos y autorizados por las comunidades regionales respectivas, y reconocidos por el IANA para servir y representar grandes regiones geográficas. El rol principal de los RIRs es administrar y distribuir los recursos de Internet dentro de las respectivas regiones. </p>
+<h2 id="14-registro-de-internet-nacional-nir">1.4. Registro de Internet Nacional (NIR)<a class="headerlink" href="#14-registro-de-internet-nacional-nir" title="Permanent link">#</a></h2>
+<p>Un Registro de Internet Nacional (NIR) distribuye, principalmente, los recursos de Internet a sus miembros o constituyentes, los cuales generalmente son LIRs. </p>
+<h2 id="15-registro-de-internet-local-lir">1.5. Registro de Internet Local (LIR)<a class="headerlink" href="#15-registro-de-internet-local-lir" title="Permanent link">#</a></h2>
+<p>Registro de Internet Local (LIR) es un IR que a su vez asigna recursos de Internet a usuarios de los servicios de red que éste provee. Los LIRs son generalmente ISPs, cuyos clientes son principalmente usuarios finales y posiblemente otros ISPs. </p>
+<h2 id="16-proveedor-de-servicios-de-internet-isp">1.6. Proveedor de Servicios de Internet (ISP)<a class="headerlink" href="#16-proveedor-de-servicios-de-internet-isp" title="Permanent link">#</a></h2>
+<p>Un Proveedor de Servicios de Internet asigna principalmente espacio de direcciones IP a los usuarios finales de los servicios de red que éste provee. Sus clientes pueden ser otros ISPs. Los ISPs no tienen restricciones geográficas como lo tienen los NIRs. </p>
+<h2 id="17-sitio-final-o-usuario-final-eu">1.7. Sitio Final o Usuario Final (EU)<a class="headerlink" href="#17-sitio-final-o-usuario-final-eu" title="Permanent link">#</a></h2>
+<p>Un end site es definido como un usuario final (suscriptor) que tiene una relación de negocios o legal (misma o entidades asociadas) con un proveedor de servicios Internet que involucra:</p>
+<ul>
+<li>al proveedor de servicios asignando un espacio de direcciones al usuario final </li>
+<li>al proveedor de servicios otorgando un servicio de tránsito para el usuario final hacia otros sitios.</li>
+<li>al proveedor de servicios transportando el tráfico del usuario final </li>
+<li>al proveedor de servicios anunciando un prefijo de ruta agregado que contiene el rango asignado por LACNIC al usuario final </li>
+</ul>
+<h2 id="18-distribuir">1.8. Distribuir<a class="headerlink" href="#18-distribuir" title="Permanent link">#</a></h2>
+<p>Distribuir significa delegar el espacio de direcciones a los IRs con el propósito de que ellos realicen la subsiguiente distribución. </p>
+<h2 id="19-asignar">1.9. Asignar<a class="headerlink" href="#19-asignar" title="Permanent link">#</a></h2>
+<p>Asignar significa delegar espacio de direcciones a un usuario final, para su uso exclusivamente dentro de la infraestructura que opera, a , así como para fines de interconexión. </p>
+<p>La asignación de espacio de direcciones es sólo para el uso por el receptor original de dicha asignación, así como para dispositivos de terceros, siempre y cuando estén operando dentro de dicha infraestructura. </p>
+<p>No está permitida, por tanto, la subasignación a terceros, fuera de dicha infraestructura (por ejemplo, el uso de asignaciones de usuario final para clientes de un ISP o similares), ni proporcionar direccionamiento a terceros en data-centers (y similares). </p>
+<h2 id="110-el-sistema-de-registro-de-internet">1.10. El sistema de registro de Internet<a class="headerlink" href="#110-el-sistema-de-registro-de-internet" title="Permanent link">#</a></h2>
+<p>El sistema de registro de Internet ha sido establecido con la finalidad de hacer cumplir los objetivos de exclusividad, conservación, ruteabilidad e información. Este sistema consiste de Registros de Internet (IR) organizados jerárquicamente. Los recursos numéricos de Internet (direcciones, ASNs, otros) son típicamente asignados a los usuarios finales por los ISPs o los NIRs.</p>
+<p>Por otra parte, estos recursos son previamente distribuidos a los NIRs e ISPs por parte de los Registros Regionales de Internet. </p>
+<p>Bajo este sistema los usuarios finales son aquellas organizaciones que operan redes en donde se utilizan los recursos. Los NIRs al igual que LACNIC mantienen recursos para ser asignados a usuarios finales o distribuidos a Proveedores de Servicios de Internet. Los recursos asignados son utilizados para la operación de redes, mientras que los recursos distribuidos se mantienen en los Registros de Internet para futuras asignaciones a sus usuarios finales. </p>
+<p>Se recuerda que los recursos distribuidos o asignados por LACNIC o los NIRs, lo son a título exclusivo para el uso por parte del receptor de los mismos, o con la autorización de éste, por parte de terceros, siempre y cuando lo permitan las políticas vigentes. Se recomienda que dichas autorizaciones puedan ser verificadas por medio de RPKI. </p>
+<h2 id="111-ruteabilidad-no-garantizada">1.11. Ruteabilidad no garantizada<a class="headerlink" href="#111-ruteabilidad-no-garantizada" title="Permanent link">#</a></h2>
+<p>Ni LACNIC, ni los NIR garantizan la ruteabilidad de las direcciones distribuidas o asignadas. </p>
+<p>Los receptores de recursos son responsables de negociar dicha ruteabilidad con sus proveedores de conectividad. LACNIC proveerá en los casos en los que sea necesario, la orientación correspondiente. </p>
+<p>Sin embargo, los recursos distribuidos o asignados deben ser anunciados en un plazo máximo de 90 días, salvo en aquellos casos en que se justifique la necesidad de no hacerlo. </p>
+<p>Los RIRs deben aplicar procedimientos operativos que reduzcan la posibilidad de fragmentación del espacio de direcciones, para minimizar riesgos de pérdida de ruteabilidad. </p>
+<h2 id="112-multiproveedor">1.12. Multiproveedor<a class="headerlink" href="#112-multiproveedor" title="Permanent link">#</a></h2>
+<p>Un sitio es multiproveedor si recibe conectividad de tiempo completo de más de un proveedor de servicios de Internet y tiene uno o más prefijos de ruteo anunciados por al menos dos de sus proveedores de conectividad. Se entiende como proveedores independientes a el hecho de que uno no utilice al otro para alcanzar Internet. </p>
+<h2 id="113-roas-rpki-con-asn-0">1.13. ROAs RPKI con ASN 0<a class="headerlink" href="#113-roas-rpki-con-asn-0" title="Permanent link">#</a></h2>
+<p>LACNIC creará autorizaciones de origen (ROAs) específicas en la infraestructura de RPKI con AS 0 en el campo Origin ASN y la lista de recursos numéricos de Internet no distribuidos o no asignados exclusivamente bajo la administración de LACNIC en la lista de prefijos de tales ROAs. </p>
+<p>El número de los ROA antes mencionados y cualquier otro parámetro técnico quedará a discreción de LACNIC. </p>
+<p>Solo LACNIC tendría la autoridad para crear ROAs RPKI para los recursos numéricos de Internet aún no distribuidos ni asignados o bien para los recursos recuperados o devueltos, de los cuales LACNIC es el custodio legítimo. </p>
+<p>Una vez que un recurso numérico de Internet se distribuya o asigne, LACNIC invalidará los ROAs que contengan dicho recurso y emitirá otros nuevos donde el recurso no aparezca, según sea necesario. </p>
+<h2 id="114-principios-para-una-buena-administracioncustodia">1.14. Principios para una buena administración/custodia<a class="headerlink" href="#114-principios-para-una-buena-administracioncustodia" title="Permanent link">#</a></h2>
+<p>El principio fundamental es la distribución de recursos de numeración de Internet únicos de acuerdo con las necesidades técnicas y operativas de las redes que hacen o harán uso de dichos recursos de numeración. Permitiendo el crecimiento y la sostenibilidad de Internet. </p>
+<p>Los recursos de numeración de Internet bajo la custodia de LACNIC se deben distribuir a organizaciones legalmente establecidas en su región de servicio y para atender mayoritariamente* redes y servicios que operan en dicha región. Se permite que clientes externos se conecten directamente a una infraestructura principal ubicada dentro de la región. </p>
+<p>Se entiende mayoritariamente como más del 50%. </p>
+<p>Los servicios de anycast con utilización de recursos fuera de la región son aceptables siempre que sean prestados por una organización legalmente establecida en la región de servicio y que al menos una copia del servicio se mantenga en infraestructura local. 
+Al obtener cualquier tipo de recursos de LACNIC o el NIR correspondiente, en caso de tener recursos legados, estos dejan de ser considerados legados. </p>
+<h3 id="1141-distribucion-racional">1.14.1. Distribución racional<a class="headerlink" href="#1141-distribucion-racional" title="Permanent link">#</a></h3>
+<p>Los recursos de numeración de Internet se deben distribuir garantizando su unicidad y teniendo en cuenta las necesidades técnicas operativas de las redes e infraestructuras que harán uso de los mismos.</p>
+<p>Se deben tener en cuenta ciertas consideraciones en cuanto a las posibles limitaciones de los espacios disponibles para cada recurso de numeración en el momento de la distribución. </p>
+<h3 id="1142-registro-publico-de-datos">1.14.2. Registro público de datos<a class="headerlink" href="#1142-registro-publico-de-datos" title="Permanent link">#</a></h3>
+<p>Proveer un registro público de datos relacionados con los recursos de numeración de Internet es un requisito fundamental del sistema de distribución de recursos de numeración de Internet.</p>
+<p>Con el objeto fundamental de garantizar la unicidad y proveer información sobre el uso y datos de contacto en caso de problemas operativos o de seguridad. También para estudios sobre utilización de estos recursos. </p>
+<h3 id="1143-distribucion-jerarquica">1.14.3. Distribución jerárquica<a class="headerlink" href="#1143-distribucion-jerarquica" title="Permanent link">#</a></h3>
+<p>La distribución de recursos de numeración de Internet en forma jerárquica contribuye a la escalabilidad del sistema de enrutamiento de las direcciones de Internet, permitiendo que las direcciones sean agrupadas y anunciadas de la manera más resumida posible. </p>
+<p>Los objetivos arriba mencionados pueden, en algunos casos, estar en conflicto entre sí o con los intereses particulares de las organizaciones solicitantes. En estos casos es necesario analizar cuidadosamente cada situación particular de manera de poder alcanzar un compromiso adecuado entre las diferentes partes involucradas en el conflicto. </p>
+<h2 id="115-solicitud-de-recursos">1.15. Solicitud de recursos<a class="headerlink" href="#115-solicitud-de-recursos" title="Permanent link">#</a></h2>
+<p>Las solicitudes de recursos a LACNIC o los NIRs correspondientes, se realizarán con los sistemas en vigor. </p>
+<p>Cualquier solicitud que sea considerada incompleta, será regresada al solicitante con las debidas indicaciones, para poder ser completada.</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Última actualización:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">12 de diciembre de 2022</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Volver al principio
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright LACNIC
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookies</h4>
+<p>Usamos cookies para reconocer sus visitas y preferencias repetidas, así como para medir la efectividad de nuestra documentación y si los usuarios encuentran lo que están buscando. Con su consentimiento, nos está ayudando a mejorar nuestra documentación.
+</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        <label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.top", "navigation.instant", "navigation.tracking", "navigation.sections", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
