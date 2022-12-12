@@ -1,4 +1,4 @@
-site_name: LACNIC
+site_name: Manual de Políticas LACNIC
 site_description: Manual de Políticas de LACNIC
 site_author: Ariel Weher
 copyright: Copyright LACNIC
@@ -28,10 +28,10 @@ theme:
     - search.share
 #    - header.autohide
   font:
-    text: Ubuntu
+    text: Barlow
   palette:
-  - primary: deep purple
-  - accent: deep purple
+  - primary: deep orange
+  - accent: orange
   - scheme: default
     toggle:
       icon: material/toggle-switch-off-outline
@@ -42,13 +42,28 @@ theme:
       name: Cambiar al modo claro
 
 nav:
-    - Manual: 'index.md'
+    - Inicio: 'index.md'
+    - Resumen: 'manual/resumen/'
+    - 1 Definiciones: 'manual/seccion1/'
+    - 2 Direcciones IPv4: 'manual/seccion2/'
+    - 3 Distribución de ASN: 'manual/seccion3/'
+    - 4 Distribución y Asignación IPv6: 'manual/seccion4/'
+    - 5 Delegación de Resolución Inversa: 'manual/seccion5/'
+    - 6 Política de LAME Delegation: 'manual/seccion6/'
+    - 7 Revocación y Devolución de Recursos: 'manual/seccion7/'
+    - 8 Solicitud de Bulk WHOIS: 'manual/seccion8/'
+    - 9 Políticas Globales: 'manual/seccion9/'
+    - 10 Distribución de Recursos para Investigación y Experimentación: 'manual/seccion10/'
+    - 11 Políticas sobre el agotamiento IPv4: 'manual/seccion11/'
+    - 12 Validación del abuse-c y abuse-mailbox: 'manual/seccion12/'
+    - A Apendices: 'manual/apendices'
+    - B Referencias: 'manual/referencias'
 
 markdown_extensions:
     - toc:
         permalink: "#"
     - pymdownx.highlight:
-        linenums: true
+        #linenums: true
     - pymdownx.emoji:
         emoji_index: !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
