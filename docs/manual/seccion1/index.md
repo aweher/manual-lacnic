@@ -2,6 +2,7 @@
 
 Los siguientes términos y sus definiciones son de gran importancia para la comprensión de los objetivos, contextos y políticas descritas en este documento. La distribución de espacio de los recursos de numeración sigue un esquema jerárquico. La responsabilidad de la administración del espacio de direcciones de IP está distribuida globalmente de acuerdo con la estructura jerárquica que se muestra debajo 
 
+![Estructura](../../assets/estructura.png)
 ## 1.1. IANA (Internet Assigned Number Authority) 
 
 IANA es responsable de distribuir parte del espacio global de las direcciones IP y los números de sistemas autónomos a Registros Regionales de acuerdo a necesidades establecidas. 

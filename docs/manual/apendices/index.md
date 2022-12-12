@@ -52,11 +52,16 @@ De acuerdo a las recomendaciones de [RFC 3194], este documento adopta un HD Rati
 
 La siguiente tabla ofrece cifras absolutas y porcentajes de utilización de direcciones equivalentes para prefijos IPv6 correspondientes a un HD- Ratio de 0.94 
 
+![T1](../../assets/tabla1.png)
+![T2](../../assets/tabla2.png)
+
 c. Apéndice 3: Reporte adicional para la distribución de espacio de direcciones IPv4 
 
 d. Apéndice 4: Reporte de distribución de recursos IPv4 
 
 La siguiente planilla, tiene como propósito informar a LACNIC la distribución de bloques IPv4 asignado a su Organización, por favor, complete las columnas con la información solicitada. Tenga en cuenta que solo deberá detallar los bloques asignados directamente por LACNIC o un NIR (México o Brasil) y cuyas subasignaciones sean iguales o menores a /30.
+
+![Reportes](../../assets/reportes.png)
 
 e. Apéndice 5: Requisitos para los candidatos para el ASO AC Proceso de Nominaciones del Address Council 
 

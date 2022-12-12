@@ -13,8 +13,8 @@ pip install -r requirements.txt
 mkdocs serve # Para previsualizar localmente en http://localhost:8000
 ```
 
-Al hacer commit al branch `master` o `main` el sitio se despliega automáticamente haciua `GitHub Pages`.
+Al hacer commit al branch `master` o `main` el sitio se despliega automáticamente hacia `GitHub Pages`.
 
 ## Versión Online
 
-[Aquí](https://aweher.github.io/manual-lacnic/)
+[Click aquí](https://aweher.github.io/manual-lacnic/)
