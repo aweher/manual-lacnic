@@ -10,5 +10,11 @@ cd manual-lacnic
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-mkdocs serve
+mkdocs serve # Para previsualizar localmente en http://localhost:8000
 ```
+
+Al hacer commit al branch `master` o `main` el sitio se despliega automáticamente haciua `GitHub Pages`.
+
+## Versión Online
+
+[Aquí](https://aweher.github.io/manual-lacnic/)
